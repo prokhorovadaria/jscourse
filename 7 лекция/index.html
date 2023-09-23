@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button>Click</button>
+    <script>
+
+        // Задание с лекции
+        // for (let pass, count=0; pass !== 234; count++) {
+        //      if (count >= 3) {
+        //      alert('ДУРАК! ВВОДИ ПРАВИЛЬНО!');
+        //     }
+        //     pass = Number(prompt('Введите пароль'));
+        // }
+
+        // 1 задание
+        // const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] === 0) {
+        //         element = ' - это нуль';
+        //     } else if( arr[i] % 2 === 0) {
+        //         element = ' - это четное число';
+        //     } else {
+        //         element = ' - это нечетное число';
+        //     }
+        //     console.log(arr[i] + element)
+        // }
+
+
+        // 2 задание 
+        // const arr = [1, 2, 3, 4, 5, 6, 7];
+        // arr.splice(3, 2);
+        // console.log(arr);
+       
+        // 4 задание
+        // for (let i = 0, num = 20; i < num; i++) {
+        //     console.log('x'.repeat(i));
+        // }
+
+        // 3 задание
+        let arrLength = 5;
+        const arr = [];
+        let sum = 0;
+        let min = 0;
+        let hasThree = false;
+
+            for (let i = 0; i < arrLength; i++) {
+                arr.push(Math.floor(Math.random() * 10));
+            }
+            console.log(arr);
+
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i]
+            }
+            console.log(sum);
+
+            min = Math.min(...arr);
+            console.log(min);
+
+            for (let i = 0; i <= arr.length; i++) {
+                if (arr[i] === 3) {
+                    hasThree = true;
+                }
+            }
+            console.log( hasThree ? 'Есть 3' : 'Нет 3');
+            
+    
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
